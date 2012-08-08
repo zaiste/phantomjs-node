@@ -29,7 +29,7 @@ wrap = (ph) ->
 
 module.exports = 
   create: (args..., cb) ->
-    app = express.createServer()
+    app = express()
     app.use express.static __dirname
     
     appServer = app.listen()
